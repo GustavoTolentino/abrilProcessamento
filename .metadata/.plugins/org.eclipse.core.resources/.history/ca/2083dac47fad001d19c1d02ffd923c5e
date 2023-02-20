@@ -1,0 +1,26 @@
+package br.com.abril.processamento.model;
+
+import java.time.LocalDateTime;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Builder
+@Component
+public class ReservaTerceiros {
+	private Integer id;
+	private Integer reserva;
+	private String intermediario;
+	private String cnpjIntermediario;
+	private String papel;
+	private Integer comissao;
+	private Integer participacao;
+	private LocalDateTime dataInclusao;
+	private LocalDateTime dataAlteracao;
+	private String status;
+}

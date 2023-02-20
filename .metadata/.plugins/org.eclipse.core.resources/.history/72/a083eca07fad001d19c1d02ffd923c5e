@@ -1,0 +1,26 @@
+package br.com.abril.processamento.model;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Builder
+@Component
+public class CadastroClientes {
+	private Integer id;
+	private String razaoSocial;
+	private String nacionalidade;
+	private String identificacao;
+	private String inscricaoEstadual;
+	private String orgaoDoGoverno;
+	private String email;
+	private String contato;
+	private String cep;
+	private String endereco;
+	private String cidade;
+	private String uf;
+	private String pais;
+}

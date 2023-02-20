@@ -1,0 +1,13 @@
+package br.com.abril.processamento.service;
+
+import org.springframework.stereotype.Service;
+
+import br.com.abril.processamento.repository.ConnectionInfra;
+
+@Service
+public class ProcessamentoService {
+	public void processar(){
+		ConnectionInfra connectionInfra = new ConnectionInfra();
+		connectionInfra.executeSqlPagamentos("SELECT * FROM fCadastroIntermediarios");
+	}
+}

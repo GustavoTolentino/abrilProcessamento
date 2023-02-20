@@ -1,0 +1,43 @@
+package br.com.abril.processamento.model;
+
+import org.springframework.stereotype.Component;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Builder
+@Component
+public class ReservaCPC {
+	private Integer id;
+	private Integer reserva;
+	private Integer pa;
+	private String empresaAbril;
+	private String cnpjAbril;
+	private String cliente;
+	private String cnpjCliente;
+	private String versao;
+	private String tipoDeReceita;
+	private String indFaturamentoBruto;
+	private String indAnuncianteFaturado;
+	private String moeda;
+	private Integer valorBruto;
+	private Integer valorLiquido;
+	private Integer valorLiquidoAPAG;
+	private String formaPagamento;
+	private Integer valorFatura;
+	private Integer contrato;
+	private String evento;
+	private String analitica;
+	private String historico;
+	private String produto;
+	private String pi;
+	private String dataInclusao;
+	private String dataAlteracao;
+	private String aprovacaoOP;
+	private String aprovacaoCredito;
+}	
