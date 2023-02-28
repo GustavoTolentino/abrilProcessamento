@@ -1,6 +1,24 @@
 package br.com.abril.processamento.model;
 
 public class CadastroClientes {
+	public CadastroClientes(Integer id, String razaoSocial, String nacionalidade, String identificacao,
+			String inscricaoEstadual, String orgaoDoGoverno, String email, String contato, String cep, String endereco,
+			String cidade, String uf, String pais) {
+		super();
+		this.id = id;
+		this.razaoSocial = razaoSocial;
+		this.nacionalidade = nacionalidade;
+		this.identificacao = identificacao;
+		this.inscricaoEstadual = inscricaoEstadual;
+		this.orgaoDoGoverno = orgaoDoGoverno;
+		this.email = email;
+		this.contato = contato;
+		this.cep = cep;
+		this.endereco = endereco;
+		this.cidade = cidade;
+		this.uf = uf;
+		this.pais = pais;
+	}
 	public Integer getId() {
 		return id;
 	}

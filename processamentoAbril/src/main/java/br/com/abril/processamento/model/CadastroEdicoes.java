@@ -1,8 +1,26 @@
 package br.com.abril.processamento.model;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class CadastroEdicoes {
+	public CadastroEdicoes(Integer id, String revista, String edicao, String nomeDaEdicao, String frequencia,
+			Date dataPublicacao, Date dataLancamento, Date competencia,
+			Date dataAbertura, Date dataReserva, Date dataCancelamento,
+			Date dataCondicional) {
+		super();
+		this.id = id;
+		this.revista = revista;
+		this.edicao = edicao;
+		this.nomeDaEdicao = nomeDaEdicao;
+		this.frequencia = frequencia;
+		this.dataPublicacao = dataPublicacao;
+		this.dataLancamento = dataLancamento;
+		this.competencia = competencia;
+		this.dataAbertura = dataAbertura;
+		this.dataReserva = dataReserva;
+		this.dataCancelamento = dataCancelamento;
+		this.dataCondicional = dataCondicional;
+	}
 	@Override
 	public String toString() {
 		return "CadastroEdicoes [id=" + id + ", revista=" + revista + ", edicao=" + edicao + ", nomeDaEdicao="
@@ -41,46 +59,46 @@ public class CadastroEdicoes {
 	public void setFrequencia(String frequencia) {
 		this.frequencia = frequencia;
 	}
-	public LocalDateTime getDataPublicacao() {
+	public Date getDataPublicacao() {
 		return dataPublicacao;
 	}
-	public void setDataPublicacao(LocalDateTime dataPublicacao) {
+	public void setDataPublicacao(Date dataPublicacao) {
 		this.dataPublicacao = dataPublicacao;
 	}
-	public LocalDateTime getDataLancamento() {
+	public Date getDataLancamento() {
 		return dataLancamento;
 	}
-	public void setDataLancamento(LocalDateTime dataLancamento) {
+	public void setDataLancamento(Date dataLancamento) {
 		this.dataLancamento = dataLancamento;
 	}
-	public LocalDateTime getCompetencia() {
+	public Date getCompetencia() {
 		return competencia;
 	}
-	public void setCompetencia(LocalDateTime competencia) {
+	public void setCompetencia(Date competencia) {
 		this.competencia = competencia;
 	}
-	public LocalDateTime getDataAbertura() {
+	public Date getDataAbertura() {
 		return dataAbertura;
 	}
-	public void setDataAbertura(LocalDateTime dataAbertura) {
+	public void setDataAbertura(Date dataAbertura) {
 		this.dataAbertura = dataAbertura;
 	}
-	public LocalDateTime getDataReserva() {
+	public Date getDataReserva() {
 		return dataReserva;
 	}
-	public void setDataReserva(LocalDateTime dataReserva) {
+	public void setDataReserva(Date dataReserva) {
 		this.dataReserva = dataReserva;
 	}
-	public LocalDateTime getDataCancelamento() {
+	public Date getDataCancelamento() {
 		return dataCancelamento;
 	}
-	public void setDataCancelamento(LocalDateTime dataCancelamento) {
+	public void setDataCancelamento(Date dataCancelamento) {
 		this.dataCancelamento = dataCancelamento;
 	}
-	public LocalDateTime getDataCondicional() {
+	public Date getDataCondicional() {
 		return dataCondicional;
 	}
-	public void setDataCondicional(LocalDateTime dataCondicional) {
+	public void setDataCondicional(Date dataCondicional) {
 		this.dataCondicional = dataCondicional;
 	}
 	private Integer id;
@@ -88,11 +106,11 @@ public class CadastroEdicoes {
 	private String edicao;
 	private String nomeDaEdicao;
 	private String frequencia;
-	private LocalDateTime dataPublicacao;
-	private LocalDateTime dataLancamento;
-	private LocalDateTime competencia;
-	private LocalDateTime dataAbertura;
-	private LocalDateTime dataReserva;
-	private LocalDateTime dataCancelamento;
-	private LocalDateTime dataCondicional;
+	private Date dataPublicacao;
+	private Date dataLancamento;
+	private Date competencia;
+	private Date dataAbertura;
+	private Date dataReserva;
+	private Date dataCancelamento;
+	private Date dataCondicional;
 }

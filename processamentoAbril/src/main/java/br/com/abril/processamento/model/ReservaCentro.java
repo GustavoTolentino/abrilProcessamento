@@ -1,8 +1,32 @@
 package br.com.abril.processamento.model;
 
-import java.time.LocalDateTime;
-
+import java.util.Date;
 public class ReservaCentro {
+	public ReservaCentro(Integer id, String centroDeLucro, Integer rateio, Integer reserva, Integer pa,
+			Date dataInclusao, Date dataAlteracao, String revista, String origemReceita,
+			String edicao, Date competencia, String espacoEFormato, String posicao, String anuncio,
+			String tipoDigital, String pagina, String status, String versao, Integer quantidade) {
+		super();
+		this.id = id;
+		this.centroDeLucro = centroDeLucro;
+		this.rateio = rateio;
+		this.reserva = reserva;
+		this.pa = pa;
+		this.dataInclusao = dataInclusao;
+		this.dataAlteracao = dataAlteracao;
+		this.revista = revista;
+		this.origemReceita = origemReceita;
+		this.edicao = edicao;
+		this.competencia = competencia;
+		this.espacoEFormato = espacoEFormato;
+		this.posicao = posicao;
+		this.anuncio = anuncio;
+		this.tipoDigital = tipoDigital;
+		this.pagina = pagina;
+		this.status = status;
+		this.versao = versao;
+		this.quantidade = quantidade;
+	}
 	@Override
 	public String toString() {
 		return "ReservaCentro [id=" + id + ", centroDeLucro=" + centroDeLucro + ", rateio=" + rateio + ", reserva="
@@ -42,16 +66,16 @@ public class ReservaCentro {
 	public void setPa(Integer pa) {
 		this.pa = pa;
 	}
-	public LocalDateTime getDataInclusao() {
+	public Date getDataInclusao() {
 		return dataInclusao;
 	}
-	public void setDataInclusao(LocalDateTime dataInclusao) {
+	public void setDataInclusao(Date dataInclusao) {
 		this.dataInclusao = dataInclusao;
 	}
-	public LocalDateTime getDataAlteracao() {
+	public Date getDataAlteracao() {
 		return dataAlteracao;
 	}
-	public void setDataAlteracao(LocalDateTime dataAlteracao) {
+	public void setDataAlteracao(Date dataAlteracao) {
 		this.dataAlteracao = dataAlteracao;
 	}
 	public String getRevista() {
@@ -72,10 +96,10 @@ public class ReservaCentro {
 	public void setEdicao(String edicao) {
 		this.edicao = edicao;
 	}
-	public LocalDateTime getCompetencia() {
+	public Date getCompetencia() {
 		return competencia;
 	}
-	public void setCompetencia(LocalDateTime competencia) {
+	public void setCompetencia(Date competencia) {
 		this.competencia = competencia;
 	}
 	public String getEspacoEFormato() {
@@ -131,12 +155,12 @@ public class ReservaCentro {
 	private Integer rateio;
 	private Integer reserva;
 	private Integer pa;
-	private LocalDateTime dataInclusao;
-	private LocalDateTime dataAlteracao;
+	private Date dataInclusao;
+	private Date dataAlteracao;
 	private String revista;
 	private String origemReceita;
 	private String edicao;
-	private LocalDateTime competencia;
+	private Date competencia;
 	private String espacoEFormato;
 	private String posicao;
 	private String anuncio;

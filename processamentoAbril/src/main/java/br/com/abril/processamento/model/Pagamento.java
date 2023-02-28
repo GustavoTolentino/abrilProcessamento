@@ -1,8 +1,19 @@
 package br.com.abril.processamento.model;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Pagamento {
+	public Pagamento(Integer id, Integer pa, String prazo, Date vencimento, Integer parcela,
+			Date dataInclusao, Date dataAlteracao) {
+		super();
+		this.id = id;
+		this.pa = pa;
+		this.prazo = prazo;
+		this.vencimento = vencimento;
+		this.parcela = parcela;
+		this.dataInclusao = dataInclusao;
+		this.dataAlteracao = dataAlteracao;
+	}
 	@Override
 	public String toString() {
 		return "Pagamento [id=" + id + ", pa=" + pa + ", prazo=" + prazo + ", vencimento=" + vencimento + ", parcela="
@@ -26,10 +37,10 @@ public class Pagamento {
 	public void setPrazo(String prazo) {
 		this.prazo = prazo;
 	}
-	public LocalDateTime getVencimento() {
+	public Date getVencimento() {
 		return vencimento;
 	}
-	public void setVencimento(LocalDateTime vencimento) {
+	public void setVencimento(Date vencimento) {
 		this.vencimento = vencimento;
 	}
 	public Integer getParcela() {
@@ -38,23 +49,23 @@ public class Pagamento {
 	public void setParcela(Integer parcela) {
 		this.parcela = parcela;
 	}
-	public LocalDateTime getDataInclusao() {
+	public Date getDataInclusao() {
 		return dataInclusao;
 	}
-	public void setDataInclusao(LocalDateTime dataInclusao) {
+	public void setDataInclusao(Date dataInclusao) {
 		this.dataInclusao = dataInclusao;
 	}
-	public LocalDateTime getDataAlteracao() {
+	public Date getDataAlteracao() {
 		return dataAlteracao;
 	}
-	public void setDataAlteracao(LocalDateTime dataAlteracao) {
+	public void setDataAlteracao(Date dataAlteracao) {
 		this.dataAlteracao = dataAlteracao;
 	}
 	private Integer id;
 	private Integer pa;
 	private String prazo;
-	private LocalDateTime vencimento;
+	private Date vencimento;
 	private Integer parcela;
-	private LocalDateTime dataInclusao;
-	private LocalDateTime dataAlteracao;
+	private Date dataInclusao;
+	private Date dataAlteracao;
 }

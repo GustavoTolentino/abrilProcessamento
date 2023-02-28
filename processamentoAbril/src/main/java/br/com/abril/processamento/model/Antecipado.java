@@ -1,5 +1,5 @@
 package br.com.abril.processamento.model;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Antecipado {
 	@Override
@@ -12,6 +12,28 @@ public class Antecipado {
 	}
 	public Integer getId() {
 		return id;
+	}
+	public Antecipado(Integer id, Integer numContrato, String empresa, String cnpjAbril, String cliente,
+			String cnpjCliente, Date dataInicio, Date dataFim, Date competencia,
+			String moeda, Integer cambio, Integer valorMoedaOriginal, Integer valorMoedaNacional, String credito,
+			String historico, String fatura) {
+		super();
+		this.id = id;
+		this.numContrato = numContrato;
+		this.empresa = empresa;
+		this.cnpjAbril = cnpjAbril;
+		this.cliente = cliente;
+		this.cnpjCliente = cnpjCliente;
+		this.dataInicio = dataInicio;
+		this.dataFim = dataFim;
+		this.competencia = competencia;
+		this.moeda = moeda;
+		this.cambio = cambio;
+		this.valorMoedaOriginal = valorMoedaOriginal;
+		this.valorMoedaNacional = valorMoedaNacional;
+		this.credito = credito;
+		this.historico = historico;
+		this.fatura = fatura;
 	}
 	public void setId(Integer id) {
 		this.id = id;
@@ -46,22 +68,22 @@ public class Antecipado {
 	public void setCnpjCliente(String cnpjCliente) {
 		this.cnpjCliente = cnpjCliente;
 	}
-	public LocalDateTime getDataInicio() {
+	public Date getDataInicio() {
 		return dataInicio;
 	}
-	public void setDataInicio(LocalDateTime dataInicio) {
+	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public LocalDateTime getDataFim() {
+	public Date getDataFim() {
 		return dataFim;
 	}
-	public void setDataFim(LocalDateTime dataFim) {
+	public void setDataFim(Date dataFim) {
 		this.dataFim = dataFim;
 	}
-	public LocalDateTime getCompetencia() {
+	public Date getCompetencia() {
 		return competencia;
 	}
-	public void setCompetencia(LocalDateTime competencia) {
+	public void setCompetencia(Date competencia) {
 		this.competencia = competencia;
 	}
 	public String getMoeda() {
@@ -112,9 +134,9 @@ public class Antecipado {
 	private String cnpjAbril;
 	private String cliente;
 	private String cnpjCliente;
-	private LocalDateTime dataInicio;
-	private LocalDateTime dataFim;
-	private LocalDateTime competencia;
+	private Date dataInicio;
+	private Date dataFim;
+	private Date competencia;
 	private String moeda;
 	private Integer cambio;
 	private Integer valorMoedaOriginal;

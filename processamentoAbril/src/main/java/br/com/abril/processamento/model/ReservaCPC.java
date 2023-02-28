@@ -1,6 +1,41 @@
 package br.com.abril.processamento.model;
 
 public class ReservaCPC {
+	public ReservaCPC(Integer id, Integer reserva, Integer pa, String empresaAbril, String cnpjAbril, String cliente,
+			String cnpjCliente, String versao, String tipoDeReceita, String indFaturamentoBruto,
+			String indAnuncianteFaturado, String moeda, Integer valorBruto, Integer valorLiquido,
+			Integer valorLiquidoAPAG, String formaPagamento, Integer valorFatura, Integer contrato, String evento,
+			String analitica, String historico, String produto, String pi, String dataInclusao, String dataAlteracao,
+			String aprovacaoOP, String aprovacaoCredito) {
+		super();
+		this.id = id;
+		this.reserva = reserva;
+		this.pa = pa;
+		this.empresaAbril = empresaAbril;
+		this.cnpjAbril = cnpjAbril;
+		this.cliente = cliente;
+		this.cnpjCliente = cnpjCliente;
+		this.versao = versao;
+		this.tipoDeReceita = tipoDeReceita;
+		this.indFaturamentoBruto = indFaturamentoBruto;
+		this.indAnuncianteFaturado = indAnuncianteFaturado;
+		this.moeda = moeda;
+		this.valorBruto = valorBruto;
+		this.valorLiquido = valorLiquido;
+		this.valorLiquidoAPAG = valorLiquidoAPAG;
+		this.formaPagamento = formaPagamento;
+		this.valorFatura = valorFatura;
+		this.contrato = contrato;
+		this.evento = evento;
+		this.analitica = analitica;
+		this.historico = historico;
+		this.produto = produto;
+		this.pi = pi;
+		this.dataInclusao = dataInclusao;
+		this.dataAlteracao = dataAlteracao;
+		this.aprovacaoOP = aprovacaoOP;
+		this.aprovacaoCredito = aprovacaoCredito;
+	}
 	@Override
 	public String toString() {
 		return "ReservaCPC [id=" + id + ", reserva=" + reserva + ", pa=" + pa + ", empresaAbril=" + empresaAbril

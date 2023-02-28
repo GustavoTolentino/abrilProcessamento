@@ -1,8 +1,23 @@
 package br.com.abril.processamento.model;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class ReservaTerceiros {
+	public ReservaTerceiros(Integer id, Integer reserva, String intermediario, String cnpjIntermediario, String papel,
+			Integer comissao, Integer participacao, Date dataInclusao, Date dataAlteracao,
+			String status) {
+		super();
+		this.id = id;
+		this.reserva = reserva;
+		this.intermediario = intermediario;
+		this.cnpjIntermediario = cnpjIntermediario;
+		this.papel = papel;
+		this.comissao = comissao;
+		this.participacao = participacao;
+		this.dataInclusao = dataInclusao;
+		this.dataAlteracao = dataAlteracao;
+		this.status = status;
+	}
 	@Override
 	public String toString() {
 		return "ReservaTerceiros [id=" + id + ", reserva=" + reserva + ", intermediario=" + intermediario
@@ -52,16 +67,16 @@ public class ReservaTerceiros {
 	public void setParticipacao(Integer participacao) {
 		this.participacao = participacao;
 	}
-	public LocalDateTime getDataInclusao() {
+	public Date getDataInclusao() {
 		return dataInclusao;
 	}
-	public void setDataInclusao(LocalDateTime dataInclusao) {
+	public void setDataInclusao(Date dataInclusao) {
 		this.dataInclusao = dataInclusao;
 	}
-	public LocalDateTime getDataAlteracao() {
+	public Date getDataAlteracao() {
 		return dataAlteracao;
 	}
-	public void setDataAlteracao(LocalDateTime dataAlteracao) {
+	public void setDataAlteracao(Date dataAlteracao) {
 		this.dataAlteracao = dataAlteracao;
 	}
 	public String getStatus() {
@@ -77,7 +92,7 @@ public class ReservaTerceiros {
 	private String papel;
 	private Integer comissao;
 	private Integer participacao;
-	private LocalDateTime dataInclusao;
-	private LocalDateTime dataAlteracao;
+	private Date dataInclusao;
+	private Date dataAlteracao;
 	private String status;
 }
